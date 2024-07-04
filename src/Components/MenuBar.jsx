@@ -43,6 +43,7 @@ export function MenuBar(props) {
           {props.name} <span style={{ color: "red" }}>{props.price}$</span>
         </h2>
         <button onClick={()=>setcount((count)=>count + props.price)}>Buy</button>
+        <button onClick={()=>count <= 0 ? alert('Please first you do buy product') : setcount((count)=>count - props.price)} style={{margin:'10px'}}>Remove</button>
         <hr />
       </div>
     );
