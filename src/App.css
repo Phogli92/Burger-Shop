@@ -40,3 +40,11 @@
 .read-the-docs {
   color: #888;
 }
+.Bigdiv{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+}
